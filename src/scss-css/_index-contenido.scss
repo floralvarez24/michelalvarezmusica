@@ -11,6 +11,42 @@
             top: 80px;
         }
     }
+    .eventos{
+        h2{
+        @include flex(flex,row);
+        justify-content:center;
+        font-family: $fuentePrincipal;
+        position: relative;
+        top: 100px;}
+        p2{
+        @include flex(flex,row);
+        position: relative;
+        top: 110px;
+        justify-content: center;
+        font-family: $fuentePrincipal;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center
+        }
+        .contenedor_afiche{
+            @include flex(flex,row);
+            justify-content: center;
+            align-items: center;
+        .afiche{
+            width: 500px;
+            position: relative;
+            top: 120px;
+            @media (max-width:500px){
+                width: 100vw;
+                padding-left: 0px;
+                padding-right: 0px;   
+            }
+            
+        }
+    }
+
+       
+    }
     .reproductor_como_siempre{
         @include flex(flex,row);
         flex-wrap: wrap;
