@@ -8,6 +8,45 @@
 body {
   background-color: rgb(199, 191, 191);
 }
+.imagen_para_video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.imagen_para_video img {
+  max-width: 100%; /* Para que la imagen se adapte al contenedor */
+  height: auto;
+  margin-bottom: 20px; /* Espaciado entre la imagen y el botón */
+}
+
+.imagen_para_video .boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen_para_video .boton a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: small;
+  display: block;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+  text-align: center;
+  margin-top: 10px;
+  animation: pulse 2s infinite;
+}
+
+.imagen_para_video .boton a:hover {
+  color: gray;
+}
 
 .index .reproductor_como_siempre .imagen_para_video .texto_index h3, .index .reproductor_como_siempre .imagen_para_video .texto_index h2, .index .reproductor_como_siempre h2 {
   font-family: "Montserrat", sans-serif;
@@ -246,16 +285,21 @@ body {
 .index .reproductor_como_siempre .imagen_para_video .texto_index h3 {
   margin-bottom: 10px;
 }
-.index .reproductor_como_siempre .imagen_para_video .foto_pdu {
+.index .reproductor_como_siempre .imagen_para_video  {
   padding: 0px 40px;
 }
 @media (max-width: 650px) {
-  .index .reproductor_como_siempre .imagen_para_video .foto_pdu {
+  .index .reproductor_como_siempre .imagen_para_video  {
     width: 100vw;
     padding-left: 0px;
     padding-right: 0px;
   }
 }
+
+  .foto_pdu{
+    width: 500px;
+  }
+
 .index .reproductor_como_siempre .imagen_para_video .boton {
   display: flex;
   margin-right: 0px;
@@ -386,6 +430,13 @@ body {
     margin: 110px 10px 10px 10px;
     text-align: justify;
   }
+}
+main .contenedor_discografia .mientras_llueve img, 
+main .contenedor_discografia .como_siempre img {
+  width: 300px; /* Define el ancho uniforme */
+  height: 300px; /* Define el alto uniforme */
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarla */
+  border-radius: 10px; /* Opcional: redondea las esquinas */
 }
 
 main .contenedor_discografia {
